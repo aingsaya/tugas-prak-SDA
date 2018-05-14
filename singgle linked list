@@ -106,16 +106,13 @@ void tambahBelakang(){
 	tail=baru;
 }
 void baca(){
-//cek apakah linked list kosong?
 	if(head == NULL){
 		cout<<"Linked list kosong"<<endl;
 		
 	}
-	//jika tidak apakah terdiri dari 1 atau n node
 	else if(head->next == NULL){
 		cout<<"Isi dari linked list adalah "<<head->data<<endl;
 	}
-	//jika lebih dari >1 maka baca semua node
 	else{
 		cout<<"Isi dari linked list adalah= ";
 		bantu=head;
@@ -140,7 +137,7 @@ void ubahDepan()
 }
 void ubahTengah(int nilaiBaru, int posisi){
 	node *bantu;
-	bantu=head; //posisikan bantu = head
+	bantu=head;
 	for (int p=1; p<=posisi; p++){
 		bantu=bantu->next;
 	} bantu->data=nilaiBaru;
